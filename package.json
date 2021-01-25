@@ -1,15 +1,21 @@
 {
   "name": "law-firm-template",
   "version": "0.1.0",
+  "description": "Law Firm Website Template",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  "author": "Magi",
+  "license": "MIT",
   "dependencies": {
+    "aos": "^2.3.4",
+    "framer-motion": "^3.2.1",
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sass": "^1.32.4"
   }
 }

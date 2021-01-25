@@ -1,0 +1,64 @@
+@import '../../styles/lib/lib.scss';
+
+.contact_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact_intro_text {
+  font-family: $font_3;
+  font-size: 1.2rem;
+}
+
+.contact_form_container {
+  display: flex;
+  @include breakpoint(mobile) {
+    flex-direction: column;
+  }
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.input_text {
+  @extend %input_text;
+  margin: 1rem;
+}
+
+.input_text_subject {
+  @extend %input_text;
+  margin: 1rem;
+}
+
+.input_textarea {
+  @extend %input_textarea;
+  margin: 1rem;
+}
+
+.input_btn {
+  margin: 1rem;
+  @extend %input_btn;
+}
+
+.firm_info {
+  margin: 0px 2rem 0px 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.firm_header {
+  font-family: $font_3;
+  font-size: 1.3rem;
+}
+
+.iframe {
+  margin: 2rem;
+  height: 40vw;
+  width: 90vw;
+}

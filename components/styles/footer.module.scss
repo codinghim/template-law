@@ -1,0 +1,16 @@
+@import '../../styles/lib/lib.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+}

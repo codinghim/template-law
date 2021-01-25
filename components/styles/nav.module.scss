@@ -1,0 +1,101 @@
+@import '../../styles/lib/lib.scss';
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 9vh;
+  z-index: 300;
+  color: black;
+  background-color: $accent_color;
+  box-shadow: 0px 0.1rem 3rem $background_color
+}
+
+.route_container {
+  display: flex;
+  align-items: center;
+  margin-right: 2vw;
+  @include breakpoint(mobile) {
+    display: none
+  }
+}
+
+.route_btn {
+  margin: 0px 1.5vw 0px 1.5vw;
+  transition: ease 0.5s;
+  font-family: $font_1;
+  font-weight: bold;
+  &:hover {
+    transform: scale(1.1)
+  }
+  @include breakpoint(desktop) {
+    font-size: 1.2vw;
+  }
+  @include breakpoint(tablet) {
+    font-size: 1.5vw;
+  }
+}
+
+.logo_container {
+  display: flex;
+  align-items:center;
+  margin-left: 2vw;
+  transition: ease 0.5s;
+  &:hover {
+    transform: scale(1.1)
+  }
+  @include breakpoint(mobile) {
+    margin-left: 4vw;
+  }
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: $font_2;
+  font-weight: bold;
+  @include breakpoint(mobile) {
+
+  }
+
+}
+
+.logo_icon {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+}
+
+.route_container_mobile {
+  display: none;
+  align-items: center;
+  z-index: 999;
+  margin-right: 4vw;
+  @include breakpoint(mobile) {
+    display: flex
+  }
+}
+
+.nav_modal {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_bar_mobile {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $accent_color;
+
+  .route_btn {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+}

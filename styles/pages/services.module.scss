@@ -1,0 +1,79 @@
+@import '../lib/lib.scss';
+
+
+.services_section {
+  background-color: $accent_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_header {
+  align-self: center;
+  font-size: 3rem;
+  font-family: $font_3;
+  margin: 1rem 0px 0px 0px;
+  border-bottom: 1px solid $background_color;
+}
+
+.sub_header {
+  font-family: $font_3;
+  width: 50%;
+  text-align:center;
+  font-size: 1.2rem;
+  margin: 1rem;
+  @include breakpoint(mobile) {
+    width: 90%;
+  }
+}
+
+.article {
+  margin: 2rem 0px 2rem;
+  border-bottom: 1px solid $background_color;
+  border-top: 1px solid $background_color;
+
+}
+
+.article_header {
+  display: inline;
+  background-color: $background_color;
+  color:white;
+  font-family: $font_3;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-top: 1px solid $background_color;
+  border-bottom: 1px solid $background_color;
+  border-right: 1px solid $background_color
+}
+
+.article_para {
+  font-family: $font_3;
+}
+
+.article_text_container {
+  width: 60%;
+  margin: 0px 1rem 0px;
+  @include breakpoint(mobile) {
+    width: 90%;
+  }
+}
+
+.article_sub_section {
+  margin: 2rem 0px 2rem;
+  display: flex;
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.icon_container {
+  position: relative;
+  height: 13rem;
+  width: 15rem;
+  margin: 1rem;
+  @include breakpoint(mobile) {
+    height: 10rem;
+    width: 11rem;
+  }
+}
